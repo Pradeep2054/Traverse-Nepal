@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TNepalUI</string>
+    <string name="appTitle">Traverse Nepal</string>
+    <string name="logIn">Log In</string>
+    <string name="UserName">USERNAME</string>
+    <string name="Password">PASSWORD</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+</resources>
