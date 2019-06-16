@@ -5,8 +5,12 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -14,6 +18,7 @@ import com.google.android.material.navigation.NavigationView;
 public class MainPageActivity extends AppCompatActivity {
     private DrawerLayout dl;
     private ActionBarDrawerToggle abdt;
+    private RelativeLayout navbarHeader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,15 @@ public class MainPageActivity extends AppCompatActivity {
 
         abdt=  new ActionBarDrawerToggle(this,dl, R.string.Open, R.string.Close);
         abdt.setDrawerIndicatorEnabled(true);
+
+
+        navbarHeader = findViewById(R.id.mQRcodeInfo);
+        navbarHeader.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openQRCodeActiviy();
+            }
+        });
 
         dl.addDrawerListener(abdt);
         abdt.syncState();
@@ -42,6 +56,9 @@ public class MainPageActivity extends AppCompatActivity {
                 else if(id == R.id.mBookHotel){
                     Toast.makeText(MainPageActivity.this, "BookHotel", Toast.LENGTH_LONG).show();
                 }
+                else if(id == R.id.mBookHotel){
+                    Toast.makeText(MainPageActivity.this, "BookHotel", Toast.LENGTH_LONG).show();
+                }
                 if(id == R.id.mNavigation){
                     Toast.makeText(MainPageActivity.this, "Navigation", Toast.LENGTH_LONG).show();
                 }
@@ -55,6 +72,10 @@ public class MainPageActivity extends AppCompatActivity {
 
     }
 
+    public void openQRCodeActiviy()
+    {
+        Toast.makeText(this, "BookHotel", Toast.LENGTH_LONG).show();
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
