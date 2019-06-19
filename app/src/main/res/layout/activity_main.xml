@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/whiteBackground"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -13,6 +14,7 @@
         android:layout_marginStart="8dp"
         android:gravity="center"
         android:layout_marginEnd="8dp"
+        android:textColor="@color/colorTextPrimary"
         android:layout_marginBottom="8dp"
         android:text="@string/appTitle"
         android:layout_weight="1"
@@ -23,8 +25,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textColorHint="@color/colorTextGrey"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:textColor="@color/colorTextSecondary"
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -49,8 +53,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Forget Password?"
+        android:textAlignment="center"
         android:layout_marginVertical="6dp"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorAccentDark"
         android:clickable="true"
         android:layout_gravity="center" />
 
@@ -62,16 +67,16 @@
 
         <Button
             android:id="@+id/mLogInBtn"
-            android:layout_width="125dp"
-            android:layout_marginVertical="10dp"
-            android:layout_height="68dp"
+            android:layout_width="100dp"
+            android:layout_marginVertical="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorAccent"
             android:layout_marginBottom="8dp"
             android:text="@string/logIn"
-            android:textColor="@color/colorTextPrimary"
+            android:textColor="@color/colorTextSecondary"
             android:layout_gravity="center" />
 
     </LinearLayout>

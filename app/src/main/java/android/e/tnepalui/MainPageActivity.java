@@ -31,13 +31,6 @@ public class MainPageActivity extends AppCompatActivity {
         abdt.setDrawerIndicatorEnabled(true);
 
 
-        navbarHeader = findViewById(R.id.mQRcodeInfo);
-        navbarHeader.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openQRCodeActiviy();
-            }
-        });
 
         dl.addDrawerListener(abdt);
         abdt.syncState();
@@ -65,6 +58,17 @@ public class MainPageActivity extends AppCompatActivity {
                 if(id == R.id.mToDoList){
                     Toast.makeText(MainPageActivity.this, "Todo list", Toast.LENGTH_LONG).show();
                 }
+
+
+
+                navbarHeader = findViewById(R.id.mQRcodeInfo);
+                navbarHeader.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        openQRCodeActiviy();
+                    }
+                });
+
                 return true;
             }
 

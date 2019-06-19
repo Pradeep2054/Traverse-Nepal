@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
 
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:elevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+android:layout_width="match_parent"
     android:layout_height="200dp"
+    android:background="@color/colorPrimary"
+
     android:clickable="true"
-    android:id="@+id/mQRcodeInfo">
+    android:id="@+id/mQRcodeInfo"
+    android:layout_marginBottom="10dp">
 
     <ImageView
         android:id="@+id/mQRcode"
@@ -18,6 +25,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorTextSecondary"
         android:text="Cristiano Ronaldo"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
@@ -26,8 +34,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorTextPrimary"
         android:text="23224245"
         android:layout_marginLeft="50dp"
         android:textSize="10sp"
         android:layout_below="@+id/mUsername"/>
 </RelativeLayout>
+</androidx.cardview.widget.CardView>
