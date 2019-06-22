@@ -1,14 +1,14 @@
-package android.e.tnepalui;
+package android.e.traversenepal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class qrcodeactivity extends AppCompatActivity {
+public class startPageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.qrcode);
+        setContentView(R.layout.activity_start_page);
     }
 }

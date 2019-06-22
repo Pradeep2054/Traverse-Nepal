@@ -1,4 +1,4 @@
-package android.e.tnepalui;
+package android.e.traversenepal;
 
 import org.junit.Test;
 

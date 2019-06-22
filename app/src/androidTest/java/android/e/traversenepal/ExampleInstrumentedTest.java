@@ -1,4 +1,4 @@
-package android.e.tnepalui;
+package android.e.traversenepal;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("android.e.tnepalui", appContext.getPackageName());
+        assertEquals("android.e.traversenepal", appContext.getPackageName());
     }
 }
