@@ -1,4 +1,4 @@
-package android.e.traversenepal;
+package com.example.traversenepal_screen1;
 
 import org.junit.Test;
 

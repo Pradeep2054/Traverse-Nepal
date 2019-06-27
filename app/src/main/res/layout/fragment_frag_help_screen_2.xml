@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag_help_screen_2"
+    android:layout_centerHorizontal="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
+
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Previous"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Next"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="SIM Card Regulations in Nepal"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="381dp"
+            android:layout_height="258dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="30dp"
+            android:text="Nepal is one of a growing number of countries taking extra steps to prevent prepaid SIM cards from being used in criminal activities. You must have your passport with you when you visit a store to buy a SIM card. The company will make a copy of your passport and take your photo as well. The office equipment in these stores is not always up to par, so if you want to ensure you’ll get everything done properly the first time, consider bringing a photo of yourself roughly the size of your passport, as well as a photocopy of the face side of your passport."
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+
+            android:id="@+id/textView5"
+            android:layout_width="378dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="30dp"
+            android:text="Smart Phone Network Operators In Nepal"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:text="There are three principal smartphone network operators in Nepal. They are:
+•	Ncell
+•	Nepal Telecom
+•	Smart Telecom
+All three operate on 900 MHz for 2G and on 1800 MHz for 3G. In 2016, the country’s government began the conversion process of 3G to 900 MHz to free up 1800 MHz for new 4G/LTE offerings. In 2017, both Nepal Telecom and Ncell launched 4G/LTE services.
+"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            tools:layout_editor_absoluteY="434dp" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
